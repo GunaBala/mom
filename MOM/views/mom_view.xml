@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <!-- ==========================================================
+                MOM Form & Tree & Search View 
+     ==========================================================-->
+    <record id="view_mom_form_new" model="ir.ui.view">
+        <field name="name">minutes.of.meeting.form</field>
+        <field name="model">minutes.of.meeting</field>
+        <field name="arch" type="xml">
+            <form string="MOM">
+                <sheet>
+                    <group>
+                        <field name="user_id" required="1"/>
+                        <field name="name" required="1"/>
+                        <field name="date" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+                
+        
+    <record id="view_mom_tree" model="ir.ui.view">
+        <field name="name">minutes.of.meeting.tree</field>
+        <field name="model">minutes.of.meeting</field>
+        <field name="arch" type="xml">
+            <tree string="MOM">
+                <field name="user_id"/>
+                <field name="name"/>
+                <field name="date" />
+            </tree>
+        </field>
+    </record>
+    
+    <record id="view_mom_internal_search" model="ir.ui.view">
+        <field name="name">minutes.of.meeting.search</field>
+        <field name="model">minutes.of.meeting</field>
+        <field name="arch" type="xml">
+            <search string="MOM">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>    
+    
+    <record id="action_mom" model="ir.actions.act_window">
+        <field name="name">Minutes Of Meeting</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">minutes.of.meeting</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+
+    <menuitem id="menu_mom" name="Minutes Of Meeting" groups="base.group_user"/>
+               
+    <menuitem name="Minutes Of Meeting"   id="submenu_mom" parent="menu_mom" sequence="1" groups="base.group_user"/>
+    <menuitem  action="action_mom"  id="action_menu_mom" parent="submenu_mom"  sequence="1" groups="base.group_user"/>                        
+    
+</odoo>    
