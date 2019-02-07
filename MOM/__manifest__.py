@@ -3,7 +3,7 @@
 
 {
     'name': 'Minutes Of Meeting',
-    'version': '12.0.0.1.1',
+    'version': '12.0',
     'license':'LGPL-3',
     'category': 'Sale',
     'sequence': 40,
