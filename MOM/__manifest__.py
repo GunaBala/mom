@@ -10,7 +10,6 @@
     'summary': 'Manage your Minutes of meeting',
     'description': "",
     'depends': ['base'],
-    'images': ['images/main_screenshot.png'],
     'data': [
         'security/ir.model.access.csv',
         'views/mom_view.xml',
