@@ -4,7 +4,7 @@
 {
     'name': 'Minutes Of Meeting',
     'version': '12.0.0.0.1',
-    'author':'Gunasekaran'
+    'author':'Gunasekaran',
     'license':'LGPL-3',
     'category': 'Sale',
     'sequence': 40,
@@ -17,6 +17,7 @@
     ],
     'demo': [],
     'installable': True,
+    'images': ['static/description/debranding_1.gif'],
     'application':True,
     'auto_install': False,
     'certificate': '',
