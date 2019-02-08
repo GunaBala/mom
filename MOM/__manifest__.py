@@ -3,7 +3,8 @@
 
 {
     'name': 'Minutes Of Meeting',
-    'version': '12.0',
+    'version': '12.0.0.0.1',
+    'author':'Gunasekaran'
     'license':'LGPL-3',
     'category': 'Sale',
     'sequence': 40,
