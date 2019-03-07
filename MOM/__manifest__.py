@@ -17,7 +17,7 @@
     ],
     'demo': [],
     'installable': True,
-    'images': ['static/description/debranding_1.gif'],
+    'images': ['static/description/in_helpdesk.gif'],
     'application':True,
     'auto_install': False,
     'certificate': '',
